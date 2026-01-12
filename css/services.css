@@ -1,7 +1,7 @@
 .services-card-container {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 48px;
 }
@@ -35,7 +35,7 @@
     width: 36px;
 }
 #services{
-    height: 954px;
+    /* height: 954px; */
 }
 .services-card-container .service-card:nth-child(2){
     background-color: #FF8D41;

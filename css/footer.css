@@ -5,6 +5,7 @@
     padding: 100px 80px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-title-wrapper {
@@ -50,4 +51,8 @@
     font-weight: 500;
     font-size: 14px;
     color: #9e9e9e;
+}
+
+@media(max-width:1024px){
+    
 }

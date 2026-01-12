@@ -7,13 +7,19 @@
 .room-image-container{
     margin-top:100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
     
 }
 .room-image-wrapper{
     width: 380px;
     height: 348px;
+    max-width: 100%;
     background-color: white;
+}
+.room-image-wrapper img{
+    max-width: 100%;
 }
 .room-image-wrapper p:nth-child(2){
     font-size: 16px;
@@ -21,6 +27,7 @@
     padding: 18px 24px 0px 24px;
     text-align: center;
     color: #424242;
+    max-width: 100%;
 }
 .room-image-wrapper p:nth-child(3){
     padding: 8px 24px;
@@ -31,5 +38,5 @@
 
 #rooms{
     background-color: #F8F9FB;
-    height: 738px;
+    /* height: 738px; */
 }

@@ -1,67 +1,98 @@
-.about-article{
+.about-article {
     display: flex;
     margin: 100px auto 0 auto;
     gap: 117px;
     /* align-items: center; */
 }
-.about-img-wrapper{
-    border:solid 1px #616161;
+.about-img-wrapper {
+    border: solid 1px #616161;
     border-radius: 50px;
 }
-.about-img-wrapper img{
+.about-img-wrapper img {
     padding: 16px;
+    width: 100%;
 }
-.about-text-wrapper{
+.about-text-wrapper {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: 322px;
-    width: 650px;
+    height: 90%;
+    width: 52%;
 }
-.about-text-wrapper h2{
+.about-text-wrapper h2 {
     color: black;
     font-size: 40px;
     font-weight: 700;
 }
-.about-btn{
-    background-color:transparent;
-    color: #FF8D41;
-    border: 1px solid #FF8D41;
+.about-btn {
+    background-color: transparent;
+    color: #ff8d41;
+    border: 1px solid #ff8d41;
     width: 126px;
-    height: 44px;
-    padding:12px 24px;
+    /* height: 44px; */
+    padding: 12px 24px;
     border-radius: 12px;
     font-size: 14px;
     font-weight: 600;
 }
-.about-text-wrapper p:nth-child(3){
+.about-text-wrapper p:nth-child(3) {
     color: #616161;
 }
-.about-text-wrapper p{
+.about-text-wrapper p {
     font-size: 16px;
     font-weight: 500;
 }
-.about-article:nth-child(3){
+.about-article:nth-child(3) {
     flex-direction: row-reverse;
 }
 
-.about-footer{
+.about-footer {
     display: flex;
-    height: 119px;
-    background-color: #FF8D41;
-    margin-top: 50px;
+    /* height: 119px; */
+    background-color: #ff8d41;
+    /* margin-top: 50px; */
+    padding: 20px;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     color: white;
 }
-.about-footer-text p:nth-child(1){
+.about-footer-text p:nth-child(1) {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
 }
-.about-footer-text p:nth-child(2){
+.about-footer-text p:nth-child(2) {
     font-size: 14px;
     font-weight: 500;
 }
 
+@media (max-width: 1024px) {
+    .about-article {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
+    }
+}
 
+@media (max-width: 768px) {
+    .about-text-wrapper {
+        width: 95%;
+    }
+}
+
+@media (max-width: 520px) {
+    .about-footer-text {
+        flex: 0 0 50%;
+    }
+    .about-footer-text p:nth-child(1) {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .about-footer-text p:nth-child(2) {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+}

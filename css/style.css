@@ -5,16 +5,17 @@
     font-family: "Poppins", sans-serif;
 }
 
-
-#home{
+#home {
     height: 100vh;
+    width: 100%;
     background-image: url("/assets/images/Home\ Screen.png");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .site-header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0px 80px 80px 80px;
     padding-top: 50px;
@@ -36,15 +37,13 @@
     font-weight: 600;
     list-style-type: none;
 }
-.nav-list a:visited {
-    
-}
+
 .nav-list a {
     text-decoration: none;
     color: white;
 }
 .banner {
-    font-size: 36px;
+    font-size: 2.34vw;
     font-weight: 700;
 }
 
@@ -52,19 +51,19 @@
     margin-left: 80px;
     /* padding-top: 250px; */
     color: white;
-    width: 605px;
-    height: 500px;
+    width: 40%;
+    height: 68%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 16px;
 }
 .hero p:nth-child(1) {
-    font-size: 18px;
+    font-size: 1.7vw;
     font-weight: 600;
 }
 .hero h1 {
-    font-size: 64px;
+    font-size: 4.16vw;
 }
 .hero-btn-grp {
     color: white;
@@ -92,7 +91,8 @@
 .container {
     width: 1292px;
     margin: auto;
-    padding: 90px 15px 0px 15px;
+    padding: 90px 15px;
+    max-width: 100%;
 }
 .stay-span {
     color: #ff8d41;
@@ -112,4 +112,67 @@
     color: #616161;
     padding: 0px 5px;
     text-align: center;
+}
+.hamburger {
+    display: none;
+}
+@media (max-width: 1024px) {
+    .hero p:nth-child(1) {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .nav-list {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        width: 68%;
+    }
+    .banner {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+}
+@media (max-width: 520px) {
+    .login-btn {
+        font-size: 16px;
+    }
+    .hero h1 {
+        font-size: 18px;
+    }
+    .hero {
+        margin-left: 40px;
+    }
+    .hero p:nth-child(1) {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .book {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    .explore {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .site-header {
+        margin: 0 40px 40px 40px;
+    }
+    .hamburger {
+        display: inline;
+        height: 24px;
+        width: 24px;
+    }
+    .login-btn {
+        display: none;
+    }
 }

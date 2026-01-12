@@ -2,21 +2,23 @@
     margin-top: 100px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .testimonial-card {
-    width: 298px;
-    height: 218px;
+    /* width: 298px; */
+    /* height: 218px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    padding:24px 16px;
     text-align: center;
 }
 .testimonial-card img {
     width: 30px;
-    height: 30px;
+    /* height: 30px; */
 }
 
 .testimonial-card p:nth-child(2) {
@@ -38,5 +40,5 @@
     color: #9E9E9E;
 }
 #testimonial{
-    height: 608px;
+    /* height: 608px; */
 }
